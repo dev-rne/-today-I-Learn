@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>PaintJS</title>
+  </head>
+  <body>
+    <h1 class="title">Start Canvas..👀</h1>
+    <h1 class="showCanvas">CANVAS✨</h1>
+
+    <div class="root">
+      <canvas id="jsCanvas" class="canvas"> </canvas>
+      <span class="material-icons reset"> delete </span>
+      <div class="controls">
+        <div class="controls__range">
+          <input
+            type="range"
+            id="jsRange"
+            min="1"
+            max="20"
+            value="5"
+            step="1"
+            class="slider"
+            id="jsRange"
+          />
+        </div>
+        <div class="controls__btns">
+          <button id="jsMode">Fill🎨</button>
+          <button id="jsSave">Save📥</button>
+        </div>
+        <div class="controls__colors" id="jsColors">
+          <div class="controls__color" style="background: #2c2c2c"></div>
+          <div class="controls__color" style="background: #ffffff"></div>
+          <div class="controls__color" style="background: #ff3b30"></div>
+          <div class="controls__color" style="background: #ff9500"></div>
+          <div class="controls__color" style="background: #ffcc00"></div>
+          <div class="controls__color" style="background: #4cd963"></div>
+          <div class="controls__color" style="background: #5ac8fa"></div>
+          <div class="controls__color" style="background: #0579ff"></div>
+          <div class="controls__color" style="background: #5856d6"></div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
